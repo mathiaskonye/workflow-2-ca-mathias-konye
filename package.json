@@ -1,0 +1,20 @@
+{
+  "name": "workflow-2-ca-mathias-konye",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathiaskonye/workflow-2-ca-mathias-konye.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mathiaskonye/workflow-2-ca-mathias-konye/issues"
+  },
+  "homepage": "https://github.com/mathiaskonye/workflow-2-ca-mathias-konye#readme"
+}

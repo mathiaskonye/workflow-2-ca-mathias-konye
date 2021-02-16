@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <meta name="title" content="SpaceX tracker">
+  <meta name="description"
+    content="SpaceX tracker tracks upcoming launches with some details of each launch, what rockets are being used today and what rockets that has been used in the past. ">
+  <meta name="keywords" content="SpaceX Launches Rockets">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="logoA">
+          <img class="Logo" src="img/Logo.png">
+        </a>
+      </div>
+      <div class="nav-right">
+        <a href="launches.html">Launches</a>
+        <a href="rockets.html">Rockets</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <h1 class="contactH1">CONTACT</h1>
+
+    <div class="contactContainer">
+
+      <form id="contactForm">
+        <input class="form" id="firstName" placeholder="First Name...">
+        <div class="errorMessage" id="firstNameError">Enter your first name here.</div>
+
+        <input class="form" id="lastName" placeholder="Last Name...">
+        <div class="errorMessage" id="lastNameError">Enter your last name here.</div>
+
+        <input class="form" id="email" placeholder="Your Email...">
+        <div class="errorMessage" id="emailError">Enter your email adress here.</div>
+        <div class="errorMessage" id="invalidEmailError">Enter a valid email adress.</div>
+
+        <textarea class="form" id="message" placeholder="Message must be at least 10 characters..."></textarea>
+        <div class="errorMessage" id="messageError">At least 10 characters.</div>
+
+        <button type="submit" id="sendBtn">SEND</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>This website is created with an Open Source Rest API https://docs.spacexdata.com</p>
+  </footer>
+
+  <script src="ts/contact.ts"></script>
+</body>
+
+</html>

@@ -1,0 +1,552 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #042C47;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: Monsterrat-SemiBold;
+    src: url(/Montserrat-SemiBold.b443a087.ttf);
+}
+@font-face {
+    font-family: Monsterrat-Regular;
+    src: url(/Montserrat-Regular.95d6ec8d.ttf);
+}
+@font-face{
+    font-family: bankgothic;
+    src: url(/bankgothic-regular.c26c6b70.ttf);
+}
+.loader {
+  background-image: url(/ajax-loader.7234ad42.gif);
+}
+.navbar {
+    background-color: white;
+    text-align: center;
+}
+.navbar a {
+    color: #707070;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Monsterrat-SemiBold;
+}
+.Logo {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+}
+.nav-left {
+    margin-right: 20px;
+}
+a:hover {
+    color: #042C47;
+}
+a  {
+  text-decoration: none;
+}
+/* HOMEPAGE -------------------------------- */
+.heroBanner {
+  background-image: url("/Hero_banner.68933484.jpg");
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.nextLaunch {
+  font-family: Monsterrat-Semibold;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 10px;
+}
+#timeToLaunch {
+  font-family: Monsterrat-SemiBold;
+  color: #FFF4CF;
+  font-size: 25px;
+  letter-spacing: 8px;
+  margin-top: 5px;
+}
+#mission {
+  color: white;
+  font-family: Monsterrat-SemiBold;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.heroBtn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 6px 12px;
+  font-family: Monsterrat-Regular;
+  font-size: 19px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+.heroBtn:hover {
+  opacity: 0.5;
+}
+.cta-circles {
+  display: flex;
+  flex-direction: column;
+}
+.circleH1 {
+  font-family: Monsterrat-Regular;
+  color: white;
+  font-size: 18px;
+  text-shadow: 2px 2px black;
+}
+.rockets {
+  background-image: url(/rocket-image.9a86b848.jpg);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.launches {
+  background-image: url(/launch-image.cb043111.jpg);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact {
+  background-image: url(/contact-image.db7c3f12.jpg);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactA {
+  transition: all 0.2s ease 0s;
+}
+.contactA:hover {
+  filter: contrast(110%);
+  transform: scale(1.1);
+}
+.launchesA {
+  transition: all 0.2s ease 0s;
+}
+/* please use prettier to auto indent and auto format you code, untidy code is unnecceptable in a team, it will not pass code review.'*/
+.launchesA:hover {
+  filter: contrast(110%);
+  transform: scale(1.1);
+}
+.rocketsA {
+  transition: all 0.2s ease 0s;
+}
+.rocketsA:hover {
+  filter: contrast(110%);
+  transform: scale(1.1);
+}
+.cta-circles {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+.about {
+  width: 100%;
+  height: 130px;
+  margin-bottom: 50px;
+  background-image: url(/1about-img.ed1b7de0.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutH1 {
+  text-align: center;
+  font-family: Monsterrat-SemiBold;
+  letter-spacing: 10px;
+  color: white;
+}
+.about-text {
+  background-color: #0F345C;
+  color: white;
+  font-family: Monsterrat-Regular;
+  font-size: 16px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.aboutP {
+  padding: 10px;
+}
+.aboutBtn {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 6px 12px;
+  background-color: #1B3F58;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+.aboutBtn:hover {
+  opacity: 0.5;
+}
+.btnText {
+  font-size: 16px;
+  font-family: Monsterrat-Regular;
+}
+.btnWrapper {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+/* CONTACT PAGE ---------------------------- */
+.wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+    min-height: 100%;
+    position: relative;
+}
+.contactH1 {
+    font-family: Monsterrat-Regular;
+    color: white;
+    letter-spacing: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.form {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    font-family: Monsterrat-Regular;
+    background-color: #0F345C;
+    border: 1px solid white;
+}
+::placeholder {
+    color: white;
+    padding-left: 6px;
+}
+input {
+    font-family: Monsterrat-Regular;
+    color: white;
+}
+textarea {
+    color: white;
+}
+#message {
+    height: 120px;
+    font-family: Monsterrat-Regular;
+    resize: none;
+}
+.errorMessage {
+    color: red;
+    font-family: Monsterrat-Regular;
+    font-weight: 900;
+    display: none;
+    padding: 6px;
+}
+#sendBtn {
+    width: 100%;
+    padding: 6px 12px;
+    margin-top: 10px;
+    font-family: Monsterrat-Regular;
+    background-color: #1B3F58;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+#sendBtn:hover {
+    opacity: 0.5;
+
+}
+/* ------- ROCKETS ---------------------- */
+.rocketsH1 {
+  font-family: Monsterrat-Regular;
+  color: white;
+  letter-spacing: 10px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.cardsRockets {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.cards-name {
+  margin-bottom: 10px;
+  font-family: bankgothic;
+  letter-spacing: 7px;
+  font-size: 20px;
+  color: white;
+}
+.rocket-description {
+  font-family: Monsterrat-Regular;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.rocket-details {
+  padding: 20px;
+  text-align: center;
+}
+.rocket-image-container {
+  padding: 20px;
+}
+.rockets-image {
+  width: 100%;
+  border: 1px solid white;
+}
+/* LAUNCHES ------------------------- */
+.launchesH1 {
+  font-family: Monsterrat-Regular;
+  color: white;
+  font-size: 26px;
+  letter-spacing: 10px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+
+}
+.mission-details {
+  margin: 10px;
+  background-color: #0F345C;
+  font-family: Monsterrat-Regular;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+.mission-name {
+  background-color: white;
+  text-align: center;
+  color: #042C47;
+  font-family: bankgothic;
+  letter-spacing: 3px;
+  font-size: 18px;
+  padding: 10px;
+}
+.launch-date {
+  padding: 15px 5px 5px 5px;
+  color: #FFF4CF;
+}
+.rocket-type {
+  padding: 5px;
+}
+.payload {
+  padding: 5px;
+}
+.mass-kg {
+  padding: 5px 5px 15px 5px;
+}
+.liveFeed {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/* FOOTER ------------- */
+footer {
+    background: white;
+    font-family: Monsterrat-Regular;
+    text-align: center;
+    font-size: 12px;
+    padding: 6px;
+}
+
+@media screen and (min-width: 600px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .navbar a {
+        font-size: 14px;
+    }
+    .nav-right {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .nav-left {
+        display: flex;
+        align-self: center;
+    }
+    .Logo {
+        padding: none;
+    }
+    /* CONTACT PAGE--------------- */
+    .wrapper {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .contactContainer {
+        margin-top: 50px;
+    }
+    .contactH1 {
+        margin-top: 100px;
+    }
+    footer {
+        font-size: 14px;
+    }
+    /* HOMEPAGE --------------------- */
+    .cta-circles {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      display: grid;
+      grid-template-columns: repeat( 3, minmax(200px, 1fr) );
+      justify-items: center;
+    }
+    .btnWrapper {
+      margin-left: 30%;
+      margin-right: 30%;
+    }
+    #timeToLaunch {
+      font-family: Monsterrat-SemiBold;
+      color: #FFF4CF;
+      font-size: 35px;
+      letter-spacing: 10px;
+    }
+    #mission {
+      font-size: 35px;
+      letter-spacing: 10px;
+    }
+    .nextLaunch {
+      font-size: 25px;
+    }
+    /* --------------- Rockets ---------- */
+    .cardsRockets {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+    .rocket-description {
+      font-size: 14px;
+    }
+    .cards-name {
+      font-size: 20px;
+    }
+    /* LAUNCHES ------------- */
+    .launchesH1 {
+      font-size: 28px;
+    }
+
+
+}
+@media screen and (min-width: 900px) {
+    .navbar a {
+        font-size: 14px;
+        padding-left: 35px;
+    }
+    .Logo {
+        width: 400px;
+    }
+    .nav-left {
+       margin: 0;
+    }
+    /* CONTACT PAGE ----------- */
+    .wrapper {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    /* HOMEPAGE ----------------- */
+    .btnWrapper {
+      margin-left: 30%;
+      margin-right: 30%;
+    }
+    .nextLaunch {
+      font-size: 25px;
+    }
+    #mission {
+      font-size: 35px;
+    }
+    .about-container{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .rockets {
+      width: 250px;
+      height: 250px;
+    }
+    .launches {
+      width: 250px;
+      height: 250px;
+    }
+    .contact {
+      width: 250px;
+      height: 250px;
+    }
+    /* ROCKETS ------------------- */
+    .rocket-description {
+      font-size: 15px;
+    }
+    .cards-name {
+      font-size: 20px;
+    }
+    .wrapperRockets {
+      margin: 30px;
+    }
+    /* LAUNCHES ------------- */
+    .liveFeed {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .launchesH1 {
+      font-size: 30px;
+    }
+
+}
+@media screen and (min-width: 1100px) {
+    .wrapper {
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+    .wrapperRockets {
+      margin: 40px;
+    }
+    .rocket-description {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    .cards-name {
+      font-size: 25px;
+    }
+    #timeToLaunch {
+      font-size: 35px;
+    }
+    #mission {
+      font-size: 35px;
+    }
+    /* LAUNCHES ------------- */
+    .launchesH1 {
+      font-size: 32px;
+    }
+}
+@media screen and (max-width: 350px) {
+  #timeToLaunch {
+    font-size: 20px;
+  }
+  .btnText {
+    font-size: 14px;
+  }
+}
+
+
+/*# sourceMappingURL=/styles.b61e60ae.css.map */
