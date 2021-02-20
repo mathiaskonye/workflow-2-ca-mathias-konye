@@ -118,18 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"ts/launches.ts":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
 var launchesUrl = "https://api.spacexdata.com/v3/launches/upcoming";
-
-function sum(a, b) {
-  return a + b;
-}
-
-exports.default = sum;
 fetch(launchesUrl).then(function (response) {
   return response.json();
 }).then(function (json) {

@@ -66,7 +66,7 @@ if (validateEmail(emailValue) === true) {
 
 }
 
-export default function checkTextAreaLength(value: any) {
+export default function checkTextAreaLength(value: any): boolean {
   const trim: any = value.trim();
 if (trim.length >= 10) { 
     return true;
@@ -79,8 +79,4 @@ if (trim.length >= 10) {
 function validateEmail(email: any): boolean {
     const regEx = /\S+@\S+\.\S+/;
     return regEx.test(email);
-}
-
-export default function sum(a: number, b: number) {
-    return a + b;
 }

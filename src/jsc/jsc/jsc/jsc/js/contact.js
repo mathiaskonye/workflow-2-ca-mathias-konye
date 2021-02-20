@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var form = document.querySelector("#contactForm");
 form.addEventListener("submit", validateForm);
 function checkInputLength(value) {
@@ -64,6 +66,7 @@ function checkTextAreaLength(value) {
         return false;
     }
 }
+exports.default = checkTextAreaLength;
 function validateEmail(email) {
     var regEx = /\S+@\S+\.\S+/;
     return regEx.test(email);

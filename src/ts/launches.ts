@@ -1,10 +1,6 @@
 
 const launchesUrl: string = "https://api.spacexdata.com/v3/launches/upcoming";
 
-export default function sum(a: number, b: number) {
-  return a + b;
-}
-
 fetch(launchesUrl)
 .then(function(response) { 
     return response.json();

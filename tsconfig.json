@@ -3,6 +3,6 @@
     "compilerOptions": {
       "target": "es5",
       "module": "commonjs",
-      "outDir": "js"
+      "outDir": "src/jsc/jsc/jsc/jsc/js"
     }
   }
