@@ -15,3 +15,4 @@ First I made a package.json file with the command "npm init -y". This will auto 
 I installed Jest with "npm install --save-dev jest", and "npm add --dev babel-jest @babel/core @babel/preset-env" this installed Babel. Next I ran "npm add --dev @babel/preset-typescript" this would help me make jest test units with TypeScript along with a file I created with the name "babel.config.js" which I put in the root of my project. There I had to copy and paste some module exports presets. Then I added "npm add --dev @types/jest".
 
 With this I first made the project tidy by making new folders. I made an src folder and put in all css/html and js files in there within the right folders. Then I converted the js files to typescript and made some unit tests with jest.
+I created a new workflow through github. This will run "npm run test" on the unit tests if I push and pull through the dev branch.
