@@ -118,7 +118,18 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"ts/launches.ts":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 var launchesUrl = "https://api.spacexdata.com/v3/launches/upcoming";
+
+function sum(a, b) {
+  return a + b;
+}
+
+exports.default = sum;
 fetch(launchesUrl).then(function (response) {
   return response.json();
 }).then(function (json) {
@@ -128,7 +139,6 @@ fetch(launchesUrl).then(function (response) {
 });
 
 function upcomingLaunches(json) {
-  console.dir(json);
   var launches = document.querySelector(".liveFeed");
   json.forEach(function (launch) {
     var timestamp = launch.launch_date_unix;
@@ -173,7 +183,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64180" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50096" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

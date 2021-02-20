@@ -1,4 +1,9 @@
-const launchesUrl = "https://api.spacexdata.com/v3/launches/upcoming";
+
+const launchesUrl: string = "https://api.spacexdata.com/v3/launches/upcoming";
+
+export default function sum(a: number, b: number) {
+  return a + b;
+}
 
 fetch(launchesUrl)
 .then(function(response) { 
@@ -11,24 +16,23 @@ fetch(launchesUrl)
     console.log(error);
   });
 
-function upcomingLaunches(json) {
-  console.dir(json);
+function upcomingLaunches(json: any) {
 
-  let launches = document.querySelector(".liveFeed");
+  let launches: Element = document.querySelector(".liveFeed");
 
-json.forEach(function(launch) { 
+json.forEach(function(launch: any) { 
 
-    const timestamp = launch.launch_date_unix;
-    const date = new Date(timestamp * 1000);
-    const formatted = ('0' + date.getDate()).slice(-2) + ' - ' + ('0' + (date.getMonth() + 1)).slice(-2) + ' - ' + date.getFullYear();
+    const timestamp: any = launch.launch_date_unix;
+    const date: Date = new Date(timestamp * 1000);
+    const formatted: string = ('0' + date.getDate()).slice(-2) + ' - ' + ('0' + (date.getMonth() + 1)).slice(-2) + ' - ' + date.getFullYear();
 
-    let payloadMass = "TBA";
+    let payloadMass: string = "TBA";
 
 if (launch.rocket.second_stage.payloads[0].payload_mass_kg == null) {
       launch.rocket.second_stage.payloads[0].payload_mass_kg = payloadMass;
     }
 
-    let html = "";
+    let html: string = "";
     html += `
              <div class="mission-details">
                    <h1 class="mission-name">${launch.mission_name}</h1>

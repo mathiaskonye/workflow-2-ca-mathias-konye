@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -149,7 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/styles.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/styles.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\font\\Montserrat-SemiBold.ttf":[["Montserrat-SemiBold.b443a087.ttf","font/Montserrat-SemiBold.ttf"],"font/Montserrat-SemiBold.ttf"],"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\font\\Montserrat-Regular.ttf":[["Montserrat-Regular.95d6ec8d.ttf","font/Montserrat-Regular.ttf"],"font/Montserrat-Regular.ttf"],"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\font\\bankgothic-regular.ttf":[["bankgothic-regular.c26c6b70.ttf","font/bankgothic-regular.ttf"],"font/bankgothic-regular.ttf"],"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\img\\ajax-loader.gif":[["ajax-loader.7234ad42.gif","img/ajax-loader.gif"],"img/ajax-loader.gif"],"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\img\\Hero_banner.jpg":[["Hero_banner.68933484.jpg","img/Hero_banner.jpg"],"img/Hero_banner.jpg"],"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\img\\rocket-image.jpg":[["rocket-image.9a86b848.jpg","img/rocket-image.jpg"],"img/rocket-image.jpg"],"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\img\\launch-image.jpg":[["launch-image.cb043111.jpg","img/launch-image.jpg"],"img/launch-image.jpg"],"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\img\\contact-image.jpg":[["contact-image.db7c3f12.jpg","img/contact-image.jpg"],"img/contact-image.jpg"],"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\img\\1about-img.png":[["1about-img.ed1b7de0.png","img/1about-img.png"],"img/1about-img.png"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\font\\Montserrat-SemiBold.ttf":[["Montserrat-SemiBold.b443a087.ttf","font/Montserrat-SemiBold.ttf"],"font/Montserrat-SemiBold.ttf"],"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\font\\Montserrat-Regular.ttf":[["Montserrat-Regular.95d6ec8d.ttf","font/Montserrat-Regular.ttf"],"font/Montserrat-Regular.ttf"],"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\font\\bankgothic-regular.ttf":[["bankgothic-regular.c26c6b70.ttf","font/bankgothic-regular.ttf"],"font/bankgothic-regular.ttf"],"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\img\\ajax-loader.gif":[["ajax-loader.7234ad42.gif","img/ajax-loader.gif"],"img/ajax-loader.gif"],"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\img\\Hero_banner.jpg":[["Hero_banner.68933484.jpg","img/Hero_banner.jpg"],"img/Hero_banner.jpg"],"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\img\\rocket-image.jpg":[["rocket-image.9a86b848.jpg","img/rocket-image.jpg"],"img/rocket-image.jpg"],"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\img\\launch-image.jpg":[["launch-image.cb043111.jpg","img/launch-image.jpg"],"img/launch-image.jpg"],"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\img\\contact-image.jpg":[["contact-image.db7c3f12.jpg","img/contact-image.jpg"],"img/contact-image.jpg"],"C:\\Users\\Mathi\\Desktop\\workflow-2-ca-mathias-konye\\src\\img\\1about-img.png":[["1about-img.ed1b7de0.png","img/1about-img.png"],"img/1about-img.png"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64180" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50096" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
